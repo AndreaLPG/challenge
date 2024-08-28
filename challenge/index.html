@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptor ALPG</title>
+    <link rel=" stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img class="logo_alura" src="Logo(2).png" >
+        </nav>
+    </header>
+
+    
+            <div class = "container">
+
+
+                <div class="text_encrypt">
+                <textarea name="text_encrypt" class="text_encrypt" id="text_encrypt" cols="30" rows="10" placeholder="Text here"></textarea>
+                </div>
+
+
+                <div class="terms">
+                    <img class="admiration_sing" src="bi_exclamation-circle-fill.png" >
+                    <p class="text_terms">Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class="buttons">
+                    <button class="encrypt" name="button" onclick=encrypt() >Encrypt</button>
+                    <button class="decrypt" name="button" onclick=descrypt() >Decrypt</button>
+                </div>
+
+            
+            <div class="response" id="default" >
+                <img src="Muñeco.png"  id="muñeco" class="muñeco">
+
+                <div class="encrypted_message" id="encrypted_message">
+                    <h2 class="message_title" id="message_title">No message found</h2>
+                    <p class="text_encrypt_decrypt" id="text_encrypt_decrypt">Insert the text you want to encrypt or decrypt                            
+                    </p>
+                </div>
+            </div>
+                <div class="response" id="response" style="display: none;">                   
+                    <div name="text_response" class="text_response" id="text_response"></div>
+                    
+                            <button class="coppy_button" name="button" onclick=copy() >Copy</button>
+                    
+                   
+                
+                </div>
+            </div>             
+    <footer class="creator_name">
+        ALPG 
+    </footer>
+</body>
+<script src="function.js"></script>
+</html>

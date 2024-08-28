@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+--font-general: "Inter", sans-serif;
+--color_primario: #F3F5FC;
+--color_secundario: #0A3871;
+
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo_alura{
+    display: flex;  
+    width: 120px;
+    height: 48px;
+    top: 40px;
+    left: 40px;
+    gap: 40px;
+    background: var(--color_primario);
+
+}
+.nav{
+background: var(--color_primario);
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: var(--color_primario);
+    
+
+}
+
+.text_encrypt{  
+    position: absolute;    
+    width: 42%;
+    height: 60%;
+    left: 12%;  
+    top: 15%; 
+    border: none;
+    font-family: var(--font-general);
+    font-size: 32px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--color_secundario);
+    background-color: var(--color_primario);
+ 
+}
+
+.text_encrypt:focus,
+.text_encrypt:active{
+    border: none;
+    outline: none;
+}
+
+.terms{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    
+    left: 12%;
+    top: 80%;
+}
+
+.admiration_sing{
+    display: flex;
+  }
+
+  .text_terms{
+    font-family: var(--font-general);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #495057;
+    opacity: 80%;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: row;   
+    align-items: flex-start; 
+    gap: 24px;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+  }
+
+  .encrypt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 67px;
+    border-radius: 24px;
+    padding: 2%;
+    gap: 8px;
+    background-color:var(--color_secundario);   
+    font-family: var(--font-general);
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 19.36px;
+  }
+
+  .decrypt{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid var(--color_secundario);
+    padding: 24px;
+    gap: 8px;
+    background:var(--color_primario);   
+    font-family: var(--font-general);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color_secundario);
+    line-height: 19.36px;
+  }
+
+  .encrypt:hover,
+  .decrypt:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+  }
+
+  
+
+  .response{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    width: 30%;
+    height: 95%;
+    top: 5%;
+    left: 60%;    
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgb(0, 0, 0, 0.08);
+    border-radius: 32px; 
+
+  }
+  .encrypted_message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;   
+    width: 100%;
+    top: 65%;      
+    gap: 16px;
+    text-align: center;   
+  }
+
+  .message_title{
+    align-items: center;
+    width: 60%;
+    height: 58px;
+    font-family: var(--font-general);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #343A40;
+    
+  }
+
+  .text_encrypt_decrypt{
+    align-items: center;
+    width: 80%;
+    font-family: var(--font-general);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+    
+  }
+
+  .response img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+  }
+  
+ 
+
+  .creator_name{
+   display: flex;  
+  align-items: center;
+ 
+    background: var(--color_secundario);
+    font-family: var(--font-general);
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    
+  }
+  .text_response{    
+    display: flex;
+    margin: 15px;  
+    position: absolute;    
+    width: 90%;
+    height: 90%;
+    top: 2%;  
+    font-family: var(--font-general);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .coppy_button{
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 67px;
+    margin-left: 10%;
+    border-radius: 24px;
+    border: 1px solid var(--color_secundario);
+    padding: 24px;
+    top: 80%;
+    gap: 8px;
+    background: #FFFFFF;   
+    font-family: var(--font-general);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color_secundario);
+    line-height: 19.36px;
+  }
+  /*responsive desing*/
+  @media (max-width: 57.5em){
+    .container{
+      display: flex;
+      flex-direction: row;
+
+    }
+    .encrypt{
+      width: 100%;
+    }
+
+    .text_encrypt{
+      width: 80%;
+      height: 60%;
+      left: 10%;
+      top: 5%;
+
+    }
+
+    .terms{
+      width: 80%;
+      left: 10%;
+      top: 67%;
+    }
+    .text_terms{
+      font-size: 16px;
+    }
+    .buttons{
+      width: 80%;
+      left: 10%;
+      top: 70%;
+    }
+    .encrypt, .decrypt{
+      width: 48%;
+      border-radius: 16px;
+    }
+
+    .encrypt:hover, .decrypt:hover{
+      margin: 0.3%;
+      width: 47.5%;
+      padding: 1.8%;
+    }
+    
+    .response{
+      width: 80%;
+      height: 15%;
+      left: 10%;
+      top: 80%;
+    }
+    .encrypted_message{
+      width: 100%;
+      top: 5%;
+    }
+    .animation{
+      top: 0;
+      display: none;
+      visibility: hidden;
+    }
+  }
